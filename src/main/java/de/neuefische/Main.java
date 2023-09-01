@@ -1,10 +1,5 @@
 package de.neuefische;
 
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
 public class Main {
     public static void main(String[] args) {
         School school = new School();
@@ -39,46 +34,5 @@ public class Main {
         }
 
         school.printAllStudents();
-    }
-
-    public static void setDemo() {
-        Set<String> fruits = new HashSet<>();
-        fruits.add("Apple");
-        fruits.add("Orange");
-        fruits.add("Banana");
-        fruits.add("Apple");
-        System.out.println(fruits);
-
-        System.out.println(fruits.contains("Apple"));
-
-        fruits.remove("Apple");
-
-        System.out.println(fruits);
-    }
-
-    public static void mapDemo() {
-        Map<String, Integer> map = new HashMap<>();
-
-        map.put("Alice", 95);
-        map.put("Bob", 88);
-        map.put("Alice", 85);
-
-        System.out.println(map);
-
-        System.out.println(map.get("Alice"));
-
-        System.out.println(map.containsKey("Blabla"));
-
-        map.remove("Alice");
-        System.out.println(map);
-    }
-
-    public static void setWithCustomClassDemo() {
-        Set<Student> students = new HashSet<>();
-
-//        students.add(new Student("a123", "Alice"));
-//        students.add(new Student("a123", "Alice"));
-
-        System.out.println(students);
     }
 }
